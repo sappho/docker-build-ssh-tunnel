@@ -1,7 +1,6 @@
 FROM sappho/ssh-tunnel
 
-MAINTAINER Andrew Heald <andrew@heald.uk>
+EXPOSE 389
 
 COPY entrypoint.sh /sbin/entrypoint.sh
-
-EXPOSE 389
+ENTRYPOINT ["/sbin/entrypoint.sh"]

@@ -9,5 +9,3 @@ RUN apt-get clean
 RUN useradd -m -s /bin/bash ssh-tunnel
 
 VOLUME /home/ssh-tunnel/.ssh
-
-ENTRYPOINT ["/sbin/entrypoint.sh"]
