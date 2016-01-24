@@ -9,5 +9,5 @@ RUN apt-get clean
 RUN mkdir /root/.ssh
 VOLUME /root/.ssh
 
-ADD entrypoint.sh /opt/entrypoint.sh
-ENTRYPOINT ["/opt/entrypoint.sh"]
+ADD entrypoint.sh /sbin/
+ENTRYPOINT ["/sbin/entrypoint.sh"]
