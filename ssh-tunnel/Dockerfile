@@ -10,5 +10,4 @@ RUN useradd -m -s /bin/bash ssh-tunnel
 
 VOLUME /home/ssh-tunnel/.ssh
 
-COPY entrypoint.sh /opt/entrypoint.sh
-ENTRYPOINT ["/opt/entrypoint.sh"]
+ENTRYPOINT ["/sbin/entrypoint.sh"]
