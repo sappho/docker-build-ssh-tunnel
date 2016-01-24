@@ -6,9 +6,7 @@ RUN apt-get -qq update
 RUN apt-get -qq -y install autossh
 RUN apt-get clean
 
-RUN useradd -m -s /bin/bash ssh-tunnel
-
-VOLUME /home/ssh-tunnel/.ssh
+VOLUME /root/.ssh
 
 EXPOSE 389
 
