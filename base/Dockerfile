@@ -6,6 +6,7 @@ RUN apt-get -qq update
 RUN apt-get -qq -y install autossh
 RUN apt-get clean
 
+RUN mkdir /root/.ssh
 VOLUME /root/.ssh
 
 COPY entrypoint.sh /opt/entrypoint.sh
