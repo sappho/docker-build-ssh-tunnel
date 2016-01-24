@@ -1,4 +1,4 @@
-FROM andrewheald/ssh-tunnel
+FROM sappho/ssh-tunnel
 
 MAINTAINER Andrew Heald <andrew@heald.uk>
 
