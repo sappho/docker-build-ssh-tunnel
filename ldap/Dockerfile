@@ -9,3 +9,8 @@ RUN apt-get clean
 RUN useradd -m -s /bin/bash ssh-tunnel
 
 VOLUME /home/ssh-tunnel/.ssh
+
+EXPOSE 389
+
+COPY entrypoint.sh /opt/entrypoint.sh
+ENTRYPOINT ["/opt/entrypoint.sh"]
