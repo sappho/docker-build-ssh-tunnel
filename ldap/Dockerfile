@@ -1,14 +1,7 @@
-FROM ubuntu:trusty
+FROM sappho/ssh-tunnel
 
 MAINTAINER Andrew Heald <andrew@heald.uk>
 
-RUN apt-get -qq update
-RUN apt-get -qq -y install autossh
-RUN apt-get clean
-
-VOLUME /root/.ssh
-
 EXPOSE 389
 
-COPY entrypoint.sh /opt/entrypoint.sh
-ENTRYPOINT ["/opt/entrypoint.sh"]
+COPY proxy.sh /opt/proxy.sh
